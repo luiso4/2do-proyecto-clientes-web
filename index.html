@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MetHub — Explorador del Met Museum</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <!-- la navbar y el footer son custom elements, se insertan solos -->
+  <met-navbar></met-navbar>
+
+  <main id="app">
+    <!-- acá el router mete el contenido de cada vista -->
+  </main>
+
+  <met-footer></met-footer>
+
+  <!-- capa de acceso a la API -->
+  <script src="js/api.js"></script>
+
+  <!-- componentes reutilizables (custom elements) -->
+  <script src="js/components/navbar.js"></script>
+  <script src="js/components/footer.js"></script>
+  <script src="js/components/loading-state.js"></script>
+  <script src="js/components/error-state.js"></script>
+  <script src="js/components/work-card.js"></script>
+
+  <!-- vistas -->
+  <script src="js/views/home.js"></script>
+  <script src="js/views/explore.js"></script>
+  <script src="js/views/detail.js"></script>
+  <script src="js/views/departments.js"></script>
+  <script src="js/views/artist.js"></script>
+  <script src="js/views/compare.js"></script>
+
+  <!-- router + arranque de la app -->
+  <script src="js/router.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
